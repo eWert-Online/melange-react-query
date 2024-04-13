@@ -116,10 +116,10 @@ external useQuery :
   ('queryKey, 'queryData, 'queryError, 'pageParam) queryOptions ->
   ('queryError, 'queryData) queryResult
   = "useQuery"
-[@@module "@tanstack/react-query"]
+[@@mel.module "@tanstack/react-query"]
 
 external useQueries :
   ('queryKey, 'queryData, 'queryError, 'pageParam) queryOptions array ->
   ('queryError, 'queryData) queryResult array
   = "useQueries"
-[@@module "@tanstack/react-query"]
+[@@mel.module "@tanstack/react-query"]

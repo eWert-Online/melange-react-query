@@ -229,11 +229,11 @@ type ('queryKey, 'queryData, 'queryError, 'pageParams) queryClient = {
 external useQueryClient :
   unit -> ('queryKey, 'queryData, 'queryError, 'pageParams) queryClient
   = "useQueryClient"
-[@@module "@tanstack/react-query"]
+[@@mel.module "@tanstack/react-query"]
 
 module Provider = struct
   external createClient : unit -> queryClientValue = "QueryClient"
-  [@@new] [@@module "@tanstack/react-query"]
+  [@@mel.new] [@@mel.module "@tanstack/react-query"]
 
   external make :
     client:queryClientValue ->
@@ -241,5 +241,5 @@ module Provider = struct
     children:React.element ->
     React.element
     = "QueryClientProvider"
-  [@@module "@tanstack/react-query"] [@@react.component]
+  [@@mel.module "@tanstack/react-query"] [@@react.component]
 end
