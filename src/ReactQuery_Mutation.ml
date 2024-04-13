@@ -104,4 +104,4 @@ external useMutation :
   ('mutationVariables, 'mutationData, 'mutationError, 'unknown) mutationOptions ->
   ('mutationVariables, 'mutationData, 'mutationError, 'unknown) mutationResult
   = "useMutation"
-[@@module "@tanstack/react-query"]
+[@@mel.module "@tanstack/react-query"]

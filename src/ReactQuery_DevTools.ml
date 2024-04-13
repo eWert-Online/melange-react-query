@@ -1,2 +1,2 @@
 external make : ?initialIsOpen:bool -> React.element = "ReactQueryDevtools"
-[@@react.component] [@@module "@tanstack/react-query-devtools"]
+[@@react.component] [@@mel.module "@tanstack/react-query-devtools"]

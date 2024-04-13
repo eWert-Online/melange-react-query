@@ -67,7 +67,7 @@ type ('queryData, 'queryResult) placeholderData =
 
 type 'queryKey queryFilter = {
   exact : bool option;
-  type_ : [ `active | `inactive | `all ] option; [@as "type"]
+  type_ : [ `active | `inactive | `all ] option; [@mel.as "type"]
   stale : bool option;
   fetching : bool option;
   predicate : (query -> bool) option;

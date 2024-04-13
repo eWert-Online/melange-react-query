@@ -132,4 +132,4 @@ external useInfiniteQuery :
   ('queryKey, 'queryData, 'queryError) infiniteQueryOptions ->
   ('queryError, 'queryData) infiniteQueryResult
   = "useInfiniteQuery"
-[@@module "@tanstack/react-query"]
+[@@mel.module "@tanstack/react-query"]
